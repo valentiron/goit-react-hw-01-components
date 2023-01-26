@@ -1,0 +1,62 @@
+.profile,
+.description,
+.stats li {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  width: 240px;
+
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.description {
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.profileAvatar {
+  width: 120px;
+  border-radius: 45%;
+}
+
+.profileName {
+ font-size: 20px;
+ font-weight: 700;
+}
+
+.profileTag,
+.profileLocation,
+.statsName {
+  font-size: 14px;
+  color: #000
+}
+
+.stats {
+  display: flex;
+
+  border-top: 1px solid #eee;
+  background-color: rgba(238, 238, 238, 0.4);
+}
+
+.stats li {
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.stats li:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+.statQuantity {
+  font-size: 14px;
+  font-weight: 700;
+}
+
