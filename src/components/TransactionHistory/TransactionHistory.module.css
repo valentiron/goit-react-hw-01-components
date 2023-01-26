@@ -1,0 +1,29 @@
+.transactionHistory tr {
+    display: flex;
+
+    width: 600px;
+}
+
+.transactionHistory th,
+.transactionHistory td {
+    display: flex;
+    justify-content: center;
+    
+    width: 200px;
+    max-width: 200px;
+    padding: 8px 0;
+  
+    font-size: 14px;
+    border: 1px solid #eee;
+}
+
+.transactionHistory th {
+    font-size: 18px;
+
+    color: rgba(255, 255, 255, 0.9);
+    background: rgb(90, 197, 255);
+  }
+  
+  .transactionHistory tr:nth-child(2n) {
+    background: #bcdbec;
+  }
