@@ -5,7 +5,7 @@ import css from './Statistics.module.css';
 const Statistics =({title, stats}) => {
     return (
         <section className={css.statistics}>
-            {title && <h2 className={css.title}>Upload stats</h2>}
+            {title && <h2 className={css.title}>Upload {title}</h2>}
             <ul className={css.list}>
                 {stats.map(({id, label, percentage}) => ( 
                     <li key={id} className={css.item} style={{backgroundColor: getRandomColor()}}>
@@ -25,7 +25,7 @@ Statistics.propTypes = {
             id:PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
             percentage: PropTypes.number.isRequired, 
-        }))
+        }).isRequired).isRequired
 }
 
 export default Statistics;

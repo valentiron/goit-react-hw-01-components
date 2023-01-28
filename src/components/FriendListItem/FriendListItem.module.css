@@ -14,3 +14,14 @@
 .offline {
     background-color: red;
 }
+
+.friendsListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+    padding: 10px;
+
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 2px;
+}
